@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  
+  body {
+    @apply antialiased;
+  }
+}
+
+@layer components {
+  .game-button {
+    @apply px-6 py-3 bg-wani-yellow hover:bg-yellow-400 text-black font-bold rounded-lg shadow-lg transition-all duration-200 transform hover:scale-105 active:scale-95;
+  }
+  
+  .score-text {
+    @apply text-3xl font-bold text-white drop-shadow-lg;
+  }
+  
+  .timer-text {
+    @apply text-4xl font-bold text-wani-yellow drop-shadow-lg;
+  }
+  
+  .wani-hole {
+    @apply relative w-20 h-20 rounded-full bg-hole-dark border-4 border-wani-brown shadow-inner cursor-pointer overflow-hidden;
+  }
+  
+  .wani-sprite {
+    @apply absolute bottom-0 left-1/2 transform -translate-x-1/2 w-16 h-16 bg-wani-green rounded-full border-2 border-wani-dark-green;
+  }
+  
+  .wani-eyes {
+    @apply absolute top-2 left-2 w-2 h-2 bg-white rounded-full;
+  }
+  
+  .wani-mouth {
+    @apply absolute bottom-2 left-1/2 transform -translate-x-1/2 w-8 h-2 bg-wani-red rounded-full;
+  }
+}
+
+@layer utilities {
+  .text-outline {
+    text-shadow: 
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
+  }
+} 
