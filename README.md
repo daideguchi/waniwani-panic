@@ -37,7 +37,7 @@ Next.js + TypeScript + Tailwind CSS で作成された、可愛らしいワニ�
 
 ## 🚀 デモ
 
-🌐 **[オンラインプレイはこちら](https://yourusername.github.io/waniwani-panic/)**
+🌐 **[オンラインプレイはこちら](https://daideguchi.github.io/waniwani-panic/)**
 
 ## 🛠️ 技術スタック
 
@@ -51,7 +51,7 @@ Next.js + TypeScript + Tailwind CSS で作成された、可愛らしいワニ�
 
 ### 1. クローン
 ```bash
-git clone https://github.com/yourusername/waniwani-panic.git
+git clone https://github.com/daideguchi/waniwani-panic.git
 cd waniwani-panic
 ```
 
