@@ -37,6 +37,9 @@ jobs:
       env:
         NODE_ENV: production
         
+    - name: Add .nojekyll file
+      run: touch ./out/.nojekyll
+      
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       if: github.ref == 'refs/heads/main'
@@ -48,4 +51,4 @@ jobs:
         keep_files: false
         force_orphan: false
         enable_jekyll: false
-        disable_nojekyll: false 
+        disable_nojekyll: true 
